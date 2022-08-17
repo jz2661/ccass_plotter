@@ -7,9 +7,9 @@ from data_loader import load_share_holdings, load_dates_holdings_async
 app = Flask(__name__)
 
 # CCASS API Routes
-@app.route('/test')
+@app.route('/')
 def test():
-    return 'Hello World!'
+    return 'This is CCASS Plotter backend service.'
 
 @app.route('/get_top_10_participants/<stock_code>/<date_str>')
 def get_top_10_participants(stock_code, date_str):
